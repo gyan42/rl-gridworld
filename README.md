@@ -1,7 +1,7 @@
 # rl-gridworld
 [Simple tool to Visualize the Q-Learning](http://ai.berkeley.edu/reinforcement.html#Q4)
 
-##How to run?
+## How to run?
 
 Press space at the end of the training to get to see the path directions.
 

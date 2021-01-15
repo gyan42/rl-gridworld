@@ -13,11 +13,10 @@
 
 
 import testClasses
-import random, math, traceback, sys, os
-import layout, textDisplay, pacman, gridworld
+import random, traceback, sys, os
+from gw import pacman
 import time
-from util import Counter, TimeoutFunction, FixedRandom
-from collections import defaultdict
+from util import FixedRandom
 from pprint import PrettyPrinter
 from hashlib import sha1
 from functools import reduce

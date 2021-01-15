@@ -23,7 +23,7 @@ import projectParams
 import random
 random.seed(0)
 try: 
-    from pacman import GameState
+    from gw.pacman import GameState
 except:
     pass
 
@@ -126,7 +126,6 @@ def loadModuleString(moduleSource):
     setModuleName(tmp, k)
     return tmp
 
-import py_compile
 
 def loadModuleFile(moduleName, filePath):
     with open(filePath, 'r') as f:
@@ -192,7 +191,7 @@ def printTest(testDict, solutionDict):
 
 
 def runTest(testName, moduleDict, printTestCase=False, display=None):
-    import testParser
+    from gw import testParser
     import testClasses
     for module in moduleDict:
         setattr(sys.modules[__name__], module, moduleDict[module])
@@ -244,7 +243,7 @@ def evaluate(generateSolutions, testRoot, moduleDict, exceptionMap=ERROR_HINT_MA
             printTestCase=False, questionToGrade=None, display=None):
     # imports of testbench code.  note that the testClasses import must follow
     # the import of student code due to dependencies
-    import testParser
+    from gw import testParser
     import testClasses
     for module in moduleDict:
         setattr(sys.modules[__name__], module, moduleDict[module])

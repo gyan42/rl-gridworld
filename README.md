@@ -1,7 +1,22 @@
 # rl-gridworld
 [Simple tool to Visualize the Q-Learning](http://ai.berkeley.edu/reinforcement.html#Q4)
 
-Berkeley: 
+##How to run?
+
+Press space at the end of the training to get to see the path directions.
+
+```
+python gridworld.py -h # to get help
+python gridworld.py -k 10 -a q
+python gridworld.py -k 10 -a q -s 4 # increase the speed
+python gridworld.py -r -0.04 -k 100 -a q -s 20000 -d 0.5
+```
+
+`python gridworld.py -k 100 -a q -s 100 # increase the speed`
+
+![](fig1.png)
+
+![](fig2.png)
 
 
 Solutions: 
@@ -20,17 +35,7 @@ Courses:
 - [Berkeley 2020](https://inst.eecs.berkeley.edu/~cs188/fa20/projects/)
 - [Berkeley 2020 Solution](https://github.com/zhangjiedev/pacman)
 
-**How to run?**
 
-Press space at the end of the training to get to see the path directions.
-
-```
-python gridworld.py -h # to get help
-python gridworld.py -k 10 -a q
-python gridworld.py -k 10 -a q -s 4 # increase the speed
-python gridworld.py -k 100 -a q -s 100 # increase the speed
-python gridworld.py -r -0.04 -k 100 -a q -s 20000 -d 0.5
-```
 **Python 2to3**
 ```
 2to3 -W *.py
